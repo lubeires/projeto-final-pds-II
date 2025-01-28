@@ -15,7 +15,7 @@ TEST_CASE("Teste do construtor de ListaDeJogadores")
 TEST_CASE("Teste de adicionar e buscar jogador")
 {
     ListaDeJogadores lista;
-    Jogador jogador1("jogador1", "João", 10, 5, 20);
+    Jogador jogador1("jogador1", "João");
 
     SUBCASE("Adicionar novo jogador com sucesso")
     {
@@ -41,7 +41,7 @@ TEST_CASE("Teste de adicionar e buscar jogador")
 TEST_CASE("Teste de remoção de jogador")
 {
     ListaDeJogadores lista;
-    Jogador jogador1("jogador1", "João", 10, 5, 20);
+    Jogador jogador1("jogador1", "João");
     lista.adicionarJogador(jogador1);
 
     SUBCASE("Remover jogador existente")
@@ -64,8 +64,8 @@ TEST_CASE("Teste de remoção de jogador")
 TEST_CASE("Teste de salvar e carregar lista de jogadores")
 {
     ListaDeJogadores lista;
-    Jogador jogador1("jogador1", "João", 10, 5, 20);
-    Jogador jogador2("jogador2", "Maria", 15, 2, 25);
+    Jogador jogador1("jogador1", "João");
+    Jogador jogador2("jogador2", "Maria");
 
     lista.adicionarJogador(jogador1);
     lista.adicionarJogador(jogador2);
@@ -80,8 +80,8 @@ TEST_CASE("Teste de listar jogadores")
     ListaDeJogadores lista;
     lista.removerJogador("jogador1"); // Certificar que o arquivo comece limpo
 
-    Jogador jogador1("jogador1", "João", 10, 5, 20);
-    Jogador jogador2("jogador2", "Ana", 15, 2, 25);
+    Jogador jogador1("jogador1", "João");
+    Jogador jogador2("jogador2", "Ana");
 
     lista.adicionarJogador(jogador1);
     lista.adicionarJogador(jogador2);
