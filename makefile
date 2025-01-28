@@ -4,13 +4,14 @@ CXXFLAGS = -I./include -std=c++17 -Wall -Wextra
 
 # Diretórios
 SRC_DIR = ./src
+OBJ_DIR = ./obj
 BUILD_DIR = ./build
 INCLUDE_DIR = ./include
 
 # Arquivos fonte
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 # Objetos correspondentes
-OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRCS))
+OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 # Executável final
 EXEC = $(BUILD_DIR)/sistema
@@ -24,13 +25,13 @@ $(EXEC): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 # Regra para criar os arquivos .o a partir dos .cpp
-$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
-	@mkdir -p $(BUILD_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(OBJ_DIR)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Limpeza dos arquivos gerados
 clean:
-	rm -rf $(BUILD_DIR)
+	rm -rf $(OBJ_DIR) $(BUILD_DIR)
 
 # Regra de "phony" para evitar conflito com arquivos reais
 .PHONY: all clean
