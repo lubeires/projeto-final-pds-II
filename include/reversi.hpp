@@ -14,12 +14,12 @@ public:
     void imprimirTabuleiro() const override;
     bool jogadaValida(int linha, int coluna) const override;
     bool tabuleiroCheio() const override;
+    int contarPecas(char jogador) const;
 
 private:
     char jogadorAtual;
 
     void alternarJogador();
-    int contarPecas(char jogador) const;
     bool capturaPecas(int linha, int coluna);
     bool capturaDirecao(int linha, int coluna, int deltaLinha, int deltaColuna) const;
 };
