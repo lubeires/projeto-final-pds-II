@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['imprimirestatisticas_0',['imprimirEstatisticas',['../class_estatisticas.html#a1cc8c320783d23bc74611c7842b13452',1,'Estatisticas::imprimirEstatisticas()'],['../class_jogador.html#a3d9940a00f06d7f215c4f913f3720f73',1,'Jogador::imprimirEstatisticas()']]],
+  ['imprimirtabuleiro_1',['imprimirTabuleiro',['../class_jogo_da_velha.html#af4b39f42de04815acaedab9f23d15be5',1,'JogoDaVelha::imprimirTabuleiro()'],['../class_jogo_de_tabuleiro.html#afdb0e67a0d441c7ee273b66cd2ef5e6c',1,'JogoDeTabuleiro::imprimirTabuleiro()'],['../class_lig4.html#a9a1879a8690094855fefcc2a0732c027',1,'Lig4::imprimirTabuleiro()'],['../class_reversi.html#a70e4802c43dd751991e414c9dca55b2b',1,'Reversi::imprimirTabuleiro()']]],
+  ['incrementarderrota_2',['incrementarDerrota',['../class_estatisticas.html#a4369ac13d94e075ab0a7dbb8239fd249',1,'Estatisticas::incrementarDerrota()'],['../class_jogador.html#ab52dfdbfae0695c3b41eb5728b3e4be5',1,'Jogador::incrementarDerrota()']]],
+  ['incrementarvitoria_3',['incrementarVitoria',['../class_estatisticas.html#ad07e7610cd04956975781327e432e900',1,'Estatisticas::incrementarVitoria()'],['../class_jogador.html#a1b2d80f4da6451a06e986cf1443a28cf',1,'Jogador::incrementarVitoria()']]],
+  ['iniciarjogo_4',['iniciarJogo',['../class_jogo_da_velha.html#a495b6a77850019afefa428104d4c677f',1,'JogoDaVelha::iniciarJogo()'],['../class_jogo_de_tabuleiro.html#a3b89fafb8ebd31a0926568918edbaf44',1,'JogoDeTabuleiro::iniciarJogo()'],['../class_lig4.html#aadecde695d2a9489f60f82b4f2455b75',1,'Lig4::iniciarJogo()'],['../class_reversi.html#a31c0e14513a060458d3ced516c5da2f0',1,'Reversi::iniciarJogo()']]]
+];
