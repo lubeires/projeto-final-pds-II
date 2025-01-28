@@ -2,8 +2,10 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <algorithm>
 #include "../include/jogador.hpp"
 #include "../include/lista_de_jogadores.hpp"
+#include "../include/gerenciador_de_jogos.hpp"
 
 void exibirMenu()
 {
@@ -11,7 +13,6 @@ void exibirMenu()
 
     std::cout << std::setfill(' ') << std::left;
     std::cout << std::endl
-              << std::endl
               << std::setw(25) << "MENU" << std::right << std::setw(25) << "" << std::endl;
     std::cout << std::setw(larguraLinha) << std::setfill('=') << "" << std::endl;
 
@@ -39,10 +40,16 @@ void exibirMenu()
     std::cout << std::setw(larguraLinha) << std::setfill('-') << "" << std::endl;
 
     std::cout << std::setfill(' ') << std::left;
-    std::cout << std::setw(30) << "(FINALIZAR SISTEMA)" << "FS" << std::endl;
+    std::cout << std::setw(30) << "(FINALIZAR SISTEMA/SALVAR ESTATÍSTICAS)" << " FS" << std::endl;
 
     std::cout << std::setw(larguraLinha) << std::setfill('=') << "" << std::endl
               << std::endl;
+}
+
+void tornarMinusculo(std::string &texto)
+{
+    std::transform(texto.begin(), texto.end(), texto.begin(), [](unsigned char c)
+                   { return std::tolower(c); });
 }
 
 int main()
@@ -50,6 +57,7 @@ int main()
     ListaDeJogadores jogadores;
     bool finalizado = false;
     std::string input;
+
     while (!finalizado)
     {
         exibirMenu();
@@ -64,6 +72,8 @@ int main()
             std::string apelido, nome;
             iss >> apelido;
             std::getline(iss, nome);
+            tornarMinusculo(apelido);
+
             if (!apelido.empty() && !nome.empty())
             {
                 nome.erase(0, nome.find_first_not_of(" "));
@@ -76,6 +86,8 @@ int main()
         {
             std::string apelido;
             iss >> apelido;
+            tornarMinusculo(apelido);
+
             if (!apelido.empty())
                 jogadores.removerJogador(apelido);
             else
@@ -97,19 +109,19 @@ int main()
         {
             char jogo;
             iss >> jogo;
-            std::string jogador1, jogador2;
-            if (jogo == 'R')
-            {
-                // INICIAR PARTIDA DE REVERSI
-            }
-            else if (jogo == 'L')
-            {
-                // INICIAR PARTIDA DE LIG4
-            }
-            else if (jogo == 'V')
-            {
-                // INICIAR PARTIDA DE JOGO DA VELHA
-            }
+            std::string j1, j2;
+            iss >> j1 >> j2;
+
+            tornarMinusculo(j1);
+            tornarMinusculo(j2);
+
+            Jogador *jogador1 = jogadores.buscarJogador(j1);
+            Jogador *jogador2 = jogadores.buscarJogador(j2);
+
+            if (jogador1 == nullptr || jogador2 == nullptr)
+                std::cout << "ERRO: jogador inexistente" << std::endl;
+            else if (jogo == 'R' || jogo == 'L' || jogo == 'V')
+                GerenciadorDeJogos().executarPartida(jogo, *jogador1, *jogador2);
             else
             {
                 std::cout << "ERRO: dados incorretos" << std::endl;
