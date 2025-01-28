@@ -26,7 +26,8 @@ void Jogador::incrementarDerrota(char jogo)
 
 void Jogador::imprimirEstatisticas() const
 {
-    std::cout << apelido << " " << nome << std::endl;
+    std::cout << std::endl
+              << apelido << " (" << nome << ")" << std::endl;
     estatisticas.imprimirEstatisticas();
 }
 
