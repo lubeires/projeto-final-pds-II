@@ -6,6 +6,12 @@
 
 ListaDeJogadores::ListaDeJogadores()
 {
+    std::filesystem::path diretorio("../data/");
+    if (!std::filesystem::exists(diretorio))
+    {
+        std::filesystem::create_directories(diretorio);
+    }
+
     std::ifstream arquivo("../data/jogadores.txt");
 
     if (!arquivo.is_open())
@@ -36,6 +42,7 @@ ListaDeJogadores::~ListaDeJogadores()
     }
     else
     {
+        salvarEmArquivo("../data/jogadores.txt");
         arquivo.close();
     }
 }
@@ -128,6 +135,12 @@ void ListaDeJogadores::carregarDeArquivo(const std::string &nomeArquivo)
 void ListaDeJogadores::listarJogadores(char criterio) const
 {
     std::vector<Jogador> copia = jogadores;
+
+    if (copia.empty())
+    {
+        std::cout << "Não há jogadores cadastrados!" << std::endl;
+        return;
+    }
 
     if (criterio == 'A')
     {
