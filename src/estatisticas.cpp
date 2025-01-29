@@ -1,4 +1,5 @@
 #include "../include/estatisticas.hpp"
+#include <array>
 
 Estatisticas::Estatisticas()
 {
@@ -34,9 +35,11 @@ int Estatisticas::getDerrotas(char jogo) const
 
 void Estatisticas::imprimirEstatisticas() const
 {
-    for (const auto &[jogo, vitoria] : vitorias)
+    static const std::array<char, 3> ordemJogos = {'R', 'L', 'V'};
+
+    for (char jogo : ordemJogos)
     {
-        std::cout << jogo << " - V: " << vitoria
+        std::cout << jogo << " - V: " << vitorias.at(jogo)
                   << " D: " << derrotas.at(jogo) << std::endl;
     }
 }
@@ -44,9 +47,11 @@ void Estatisticas::imprimirEstatisticas() const
 std::string Estatisticas::serializar() const
 {
     std::ostringstream oss;
-    for (const auto &[jogo, vitoria] : vitorias)
+    static const std::array<char, 3> ordemJogos = {'R', 'L', 'V'};
+
+    for (char jogo : ordemJogos)
     {
-        oss << jogo << "," << vitoria << "," << derrotas.at(jogo) << ";";
+        oss << jogo << "," << vitorias.at(jogo) << "," << derrotas.at(jogo) << ";";
     }
     return oss.str();
 }
