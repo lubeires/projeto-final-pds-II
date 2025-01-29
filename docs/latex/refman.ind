@@ -1,0 +1,179 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}JogoDeTabuleiro}
+    \subitem {JogoDeTabuleiro}, \hyperpage{17}
+  \item {\texorpdfstring{$\sim$}{\string~}ListaDeJogadores}
+    \subitem {ListaDeJogadores}, \hyperpage{23}
+
+  \indexspace
+
+  \item {adicionarJogador}
+    \subitem {ListaDeJogadores}, \hyperpage{23}
+
+  \indexspace
+
+  \item {buscarJogador}
+    \subitem {ListaDeJogadores}, \hyperpage{24}
+
+  \indexspace
+
+  \item {carregarDeArquivo}
+    \subitem {ListaDeJogadores}, \hyperpage{24}
+  \item {contarPecas}
+    \subitem {Reversi}, \hyperpage{27}
+
+  \indexspace
+
+  \item {desserializar}
+    \subitem {Estatisticas}, \hyperpage{10}
+    \subitem {Jogador}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Estatisticas}, \hyperpage{9}
+    \subitem {desserializar}, \hyperpage{10}
+    \subitem {Estatisticas}, \hyperpage{10}
+    \subitem {getDerrotas}, \hyperpage{10}
+    \subitem {getVitorias}, \hyperpage{10}
+    \subitem {imprimirEstatisticas}, \hyperpage{11}
+    \subitem {incrementarDerrota}, \hyperpage{11}
+    \subitem {incrementarVitoria}, \hyperpage{11}
+    \subitem {serializar}, \hyperpage{11}
+  \item {executarPartida}
+    \subitem {GerenciadorDeJogos}, \hyperpage{12}
+
+  \indexspace
+
+  \item {GerenciadorDeJogos}, \hyperpage{12}
+    \subitem {executarPartida}, \hyperpage{12}
+  \item {getApelido}
+    \subitem {Jogador}, \hyperpage{14}
+  \item {getDerrotas}
+    \subitem {Estatisticas}, \hyperpage{10}
+  \item {getNome}
+    \subitem {Jogador}, \hyperpage{14}
+  \item {getVitorias}
+    \subitem {Estatisticas}, \hyperpage{10}
+
+  \indexspace
+
+  \item {imprimirEstatisticas}
+    \subitem {Estatisticas}, \hyperpage{11}
+    \subitem {Jogador}, \hyperpage{15}
+  \item {imprimirTabuleiro}
+    \subitem {JogoDeTabuleiro}, \hyperpage{17}
+    \subitem {Lig4}, \hyperpage{20}
+    \subitem {Reversi}, \hyperpage{27}
+  \item {include/estatisticas.hpp}, \hyperpage{31}
+  \item {include/gerenciador\_de\_jogos.hpp}, \hyperpage{31}
+  \item {include/jogador.hpp}, \hyperpage{32}
+  \item {include/jogo\_da\_velha.hpp}, \hyperpage{32}
+  \item {include/jogos\_tabuleiro.hpp}, \hyperpage{32}
+  \item {include/lig4.hpp}, \hyperpage{33}
+  \item {include/lista\_de\_jogadores.hpp}, \hyperpage{33}
+  \item {include/reversi.hpp}, \hyperpage{34}
+  \item {incrementarDerrota}
+    \subitem {Estatisticas}, \hyperpage{11}
+    \subitem {Jogador}, \hyperpage{15}
+  \item {incrementarVitoria}
+    \subitem {Estatisticas}, \hyperpage{11}
+    \subitem {Jogador}, \hyperpage{15}
+  \item {iniciarJogo}
+    \subitem {JogoDeTabuleiro}, \hyperpage{17}
+    \subitem {Lig4}, \hyperpage{20}
+    \subitem {Reversi}, \hyperpage{27}
+
+  \indexspace
+
+  \item {jogadaValida}
+    \subitem {JogoDeTabuleiro}, \hyperpage{17}
+    \subitem {Lig4}, \hyperpage{21}
+    \subitem {Reversi}, \hyperpage{27}
+  \item {Jogador}, \hyperpage{13}
+    \subitem {desserializar}, \hyperpage{14}
+    \subitem {getApelido}, \hyperpage{14}
+    \subitem {getNome}, \hyperpage{14}
+    \subitem {imprimirEstatisticas}, \hyperpage{15}
+    \subitem {incrementarDerrota}, \hyperpage{15}
+    \subitem {incrementarVitoria}, \hyperpage{15}
+    \subitem {Jogador}, \hyperpage{14}
+    \subitem {serializar}, \hyperpage{15}
+  \item {JogoDaVelha}, \hyperpage{16}
+  \item {JogoDeTabuleiro}, \hyperpage{16}
+    \subitem {\texorpdfstring{$\sim$}{\string~}JogoDeTabuleiro}, 
+		\hyperpage{17}
+    \subitem {imprimirTabuleiro}, \hyperpage{17}
+    \subitem {iniciarJogo}, \hyperpage{17}
+    \subitem {jogadaValida}, \hyperpage{17}
+    \subitem {realizarJogada}, \hyperpage{18}
+    \subitem {tabuleiro}, \hyperpage{19}
+    \subitem {tabuleiroCheio}, \hyperpage{18}
+    \subitem {verificarVitoria}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Lig4}, \hyperpage{19}
+    \subitem {imprimirTabuleiro}, \hyperpage{20}
+    \subitem {iniciarJogo}, \hyperpage{20}
+    \subitem {jogadaValida}, \hyperpage{21}
+    \subitem {Lig4}, \hyperpage{20}
+    \subitem {realizarJogada}, \hyperpage{21}
+    \subitem {tabuleiroCheio}, \hyperpage{22}
+    \subitem {verificarVitoria}, \hyperpage{22}
+  \item {ListaDeJogadores}, \hyperpage{22}
+    \subitem {\texorpdfstring{$\sim$}{\string~}ListaDeJogadores}, 
+		\hyperpage{23}
+    \subitem {adicionarJogador}, \hyperpage{23}
+    \subitem {buscarJogador}, \hyperpage{24}
+    \subitem {carregarDeArquivo}, \hyperpage{24}
+    \subitem {ListaDeJogadores}, \hyperpage{23}
+    \subitem {listarJogadores}, \hyperpage{24}
+    \subitem {removerJogador}, \hyperpage{25}
+    \subitem {salvarEmArquivo}, \hyperpage{25}
+  \item {listarJogadores}
+    \subitem {ListaDeJogadores}, \hyperpage{24}
+
+  \indexspace
+
+  \item {README}, \hyperpage{1}
+  \item {realizarJogada}
+    \subitem {JogoDeTabuleiro}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{21}
+    \subitem {Reversi}, \hyperpage{28}
+  \item {removerJogador}
+    \subitem {ListaDeJogadores}, \hyperpage{25}
+  \item {Reversi}, \hyperpage{25}
+    \subitem {contarPecas}, \hyperpage{27}
+    \subitem {imprimirTabuleiro}, \hyperpage{27}
+    \subitem {iniciarJogo}, \hyperpage{27}
+    \subitem {jogadaValida}, \hyperpage{27}
+    \subitem {realizarJogada}, \hyperpage{28}
+    \subitem {Reversi}, \hyperpage{27}
+    \subitem {tabuleiroCheio}, \hyperpage{28}
+    \subitem {verificarVitoria}, \hyperpage{29}
+
+  \indexspace
+
+  \item {salvarEmArquivo}
+    \subitem {ListaDeJogadores}, \hyperpage{25}
+  \item {serializar}
+    \subitem {Estatisticas}, \hyperpage{11}
+    \subitem {Jogador}, \hyperpage{15}
+
+  \indexspace
+
+  \item {tabuleiro}
+    \subitem {JogoDeTabuleiro}, \hyperpage{19}
+  \item {tabuleiroCheio}
+    \subitem {JogoDeTabuleiro}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{22}
+    \subitem {Reversi}, \hyperpage{28}
+
+  \indexspace
+
+  \item {verificarVitoria}
+    \subitem {JogoDeTabuleiro}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{22}
+    \subitem {Reversi}, \hyperpage{29}
+
+\end{theindex}

@@ -1,0 +1,68 @@
+\doxysection{Gerenciador\+De\+Jogos Class Reference}
+\hypertarget{classGerenciadorDeJogos}{}\label{classGerenciadorDeJogos}\index{GerenciadorDeJogos@{GerenciadorDeJogos}}
+
+
+Classe responsável por gerenciar e executar partidas de jogos de tabuleiro.  
+
+
+
+
+{\ttfamily \#include $<$gerenciador\+\_\+de\+\_\+jogos.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classGerenciadorDeJogos_aafd054c9c7233dd9243f358a85ea8dbe}{executar\+Partida}} (char tipo\+Jogo, \mbox{\hyperlink{classJogador}{Jogador}} \&jogador1, \mbox{\hyperlink{classJogador}{Jogador}} \&jogador2)
+\begin{DoxyCompactList}\small\item\em Executa uma partida de um jogo de tabuleiro especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável por gerenciar e executar partidas de jogos de tabuleiro. 
+
+Suporta os seguintes jogos\+:
+\begin{DoxyItemize}
+\item \textquotesingle{}R\textquotesingle{}\+: \doxylink{classReversi}{Reversi}.
+\item \textquotesingle{}L\textquotesingle{}\+: \doxylink{classLig4}{Lig4}.
+\item \textquotesingle{}V\textquotesingle{}\+: Jogo da Velha. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGerenciadorDeJogos_aafd054c9c7233dd9243f358a85ea8dbe}\label{classGerenciadorDeJogos_aafd054c9c7233dd9243f358a85ea8dbe} 
+\index{GerenciadorDeJogos@{GerenciadorDeJogos}!executarPartida@{executarPartida}}
+\index{executarPartida@{executarPartida}!GerenciadorDeJogos@{GerenciadorDeJogos}}
+\doxysubsubsection{\texorpdfstring{executarPartida()}{executarPartida()}}
+{\footnotesize\ttfamily void Gerenciador\+De\+Jogos\+::executar\+Partida (\begin{DoxyParamCaption}\item[{char}]{tipo\+Jogo,  }\item[{\mbox{\hyperlink{classJogador}{Jogador}} \&}]{jogador1,  }\item[{\mbox{\hyperlink{classJogador}{Jogador}} \&}]{jogador2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Executa uma partida de um jogo de tabuleiro especificado. 
+
+Este método gerencia o fluxo de uma partida entre dois jogadores, alternando turnos, verificando condições de vitória ou empate e registrando os resultados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo\+Jogo} & Caractere que identifica o tipo de jogo a ser jogado.
+\begin{DoxyItemize}
+\item \textquotesingle{}R\textquotesingle{}\+: \doxylink{classReversi}{Reversi}.
+\item \textquotesingle{}L\textquotesingle{}\+: \doxylink{classLig4}{Lig4}.
+\item \textquotesingle{}V\textquotesingle{}\+: Jogo da Velha. 
+\end{DoxyItemize}\\
+\hline
+{\em jogador1} & Referência ao primeiro jogador. \\
+\hline
+{\em jogador2} & Referência ao segundo jogador.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o tipo de jogo for inválido. \\
+\hline
+{\em std\+::runtime\+\_\+error} & Se ocorrerem erros na entrada do usuário. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/gerenciador\+\_\+de\+\_\+jogos.\+hpp\item 
+src/gerenciador\+\_\+de\+\_\+jogos.\+cpp\end{DoxyCompactItemize}

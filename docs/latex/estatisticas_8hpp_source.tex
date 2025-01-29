@@ -1,0 +1,40 @@
+\doxysection{estatisticas.\+hpp}
+\hypertarget{estatisticas_8hpp_source}{}\label{estatisticas_8hpp_source}\index{include/estatisticas.hpp@{include/estatisticas.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ESTATISTICAS\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ESTATISTICAS\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEstatisticas}{Estatisticas}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::map<char,\ int>\ vitorias;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::map<char,\ int>\ derrotas;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classEstatisticas_a7b0e9c4ea7b408c9cf3f4a26771172bf}{Estatisticas}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEstatisticas_ad07e7610cd04956975781327e432e900}{incrementarVitoria}}(\textcolor{keywordtype}{char}\ jogo);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEstatisticas_a4369ac13d94e075ab0a7dbb8239fd249}{incrementarDerrota}}(\textcolor{keywordtype}{char}\ jogo);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEstatisticas_ae932c4a45d440d8ead58aad38bff18d9}{getVitorias}}(\textcolor{keywordtype}{char}\ jogo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEstatisticas_ad94871731dc68eb3a9957db324bd5fe5}{getDerrotas}}(\textcolor{keywordtype}{char}\ jogo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEstatisticas_a1cc8c320783d23bc74611c7842b13452}{imprimirEstatisticas}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00084\ \ \ \ \ std::string\ \mbox{\hyperlink{classEstatisticas_aba0d72ea537d14085d2c5b959380f769}{serializar}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEstatisticas_a2d05ac11b6f034d79d710788499097dd}{desserializar}}(\textcolor{keyword}{const}\ std::string\ \&dados);}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

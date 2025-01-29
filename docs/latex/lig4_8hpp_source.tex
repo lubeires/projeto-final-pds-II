@@ -1,0 +1,37 @@
+\doxysection{lig4.\+hpp}
+\hypertarget{lig4_8hpp_source}{}\label{lig4_8hpp_source}\index{include/lig4.hpp@{include/lig4.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LIG4\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LIG4\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}jogos\_tabuleiro.hpp"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLig4}{Lig4}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classJogoDeTabuleiro}{JogoDeTabuleiro}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classLig4_adffdeddf3d20829f752913801554126d}{Lig4}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLig4_aadecde695d2a9489f60f82b4f2455b75}{iniciarJogo}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLig4_a14c4344beeb6f89b2316adea39951795}{realizarJogada}}(\textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLig4_a4060a4a0515ffe048044d85895ca2bf6}{verificarVitoria}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLig4_a9a1879a8690094855fefcc2a0732c027}{imprimirTabuleiro}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLig4_ab72a0c02d133beb8bca6fc968f67885a}{jogadaValida}}(\textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLig4_a23f7cf4ae90eccb229dd8684fc0258e0}{tabuleiroCheio}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{char}\ jogadorAtual;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ alternarJogador();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{bool}\ verificarSequencia(\textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{int}\ deltaLinha,\ \textcolor{keywordtype}{int}\ deltaColuna)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ \};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

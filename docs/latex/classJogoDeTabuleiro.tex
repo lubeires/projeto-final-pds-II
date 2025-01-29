@@ -1,0 +1,208 @@
+\doxysection{Jogo\+De\+Tabuleiro Class Reference}
+\hypertarget{classJogoDeTabuleiro}{}\label{classJogoDeTabuleiro}\index{JogoDeTabuleiro@{JogoDeTabuleiro}}
+
+
+Classe abstrata que define a interface para jogos de tabuleiro.  
+
+
+
+
+{\ttfamily \#include $<$jogos\+\_\+tabuleiro.\+hpp$>$}
+
+
+
+Inheritance diagram for Jogo\+De\+Tabuleiro\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classJogoDeTabuleiro_aefe341883899b14d5cda472308c93e30}{\texorpdfstring{$\sim$}{\string~}\+Jogo\+De\+Tabuleiro}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJogoDeTabuleiro_a3b89fafb8ebd31a0926568918edbaf44}{iniciar\+Jogo}} ()=0
+\begin{DoxyCompactList}\small\item\em Inicializa o estado do jogo. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classJogoDeTabuleiro_a88744c91679f9f43d76d15a35b56e7e1}{realizar\+Jogada}} (int linha, int coluna)=0
+\begin{DoxyCompactList}\small\item\em Realiza uma jogada no tabuleiro. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classJogoDeTabuleiro_a25ca4ce9c215c1dad37399b53c97085a}{verificar\+Vitoria}} () const =0
+\begin{DoxyCompactList}\small\item\em Verifica se houve uma vitória no jogo. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJogoDeTabuleiro_afdb0e67a0d441c7ee273b66cd2ef5e6c}{imprimir\+Tabuleiro}} () const =0
+\begin{DoxyCompactList}\small\item\em Imprime o tabuleiro no console. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classJogoDeTabuleiro_a7fa3437977e63f285931228b196ef7a5}{jogada\+Valida}} (int linha, int coluna) const =0
+\begin{DoxyCompactList}\small\item\em Verifica se uma jogada é válida. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classJogoDeTabuleiro_a3d38c00071c5b9207916a18609463f55}{tabuleiro\+Cheio}} () const =0
+\begin{DoxyCompactList}\small\item\em Verifica se o tabuleiro está cheio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classJogoDeTabuleiro_affe59c99223c8ef23356a98827bcf527}\label{classJogoDeTabuleiro_affe59c99223c8ef23356a98827bcf527} 
+int {\bfseries linhas}
+\begin{DoxyCompactList}\small\item\em Número de linhas do tabuleiro. \end{DoxyCompactList}\item 
+\Hypertarget{classJogoDeTabuleiro_a65d00d9fe732cf9aeaf3aed73b0d5294}\label{classJogoDeTabuleiro_a65d00d9fe732cf9aeaf3aed73b0d5294} 
+int {\bfseries colunas}
+\begin{DoxyCompactList}\small\item\em Número de colunas do tabuleiro. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ char $>$ $>$ \mbox{\hyperlink{classJogoDeTabuleiro_a677a040d103daf070ea125a9b78adf9d}{tabuleiro}}
+\begin{DoxyCompactList}\small\item\em Representação do tabuleiro como uma matriz 2D de caracteres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe abstrata que define a interface para jogos de tabuleiro. 
+
+Esta classe fornece a estrutura base para implementar diferentes jogos de tabuleiro. Contém métodos virtuais puros que devem ser implementados pelas classes derivadas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classJogoDeTabuleiro_aefe341883899b14d5cda472308c93e30}\label{classJogoDeTabuleiro_aefe341883899b14d5cda472308c93e30} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!````~JogoDeTabuleiro@{\texorpdfstring{$\sim$}{\string~}JogoDeTabuleiro}}
+\index{````~JogoDeTabuleiro@{\texorpdfstring{$\sim$}{\string~}JogoDeTabuleiro}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}JogoDeTabuleiro()}{\string~JogoDeTabuleiro()}}
+{\footnotesize\ttfamily virtual Jogo\+De\+Tabuleiro\+::\texorpdfstring{$\sim$}{\string~}\+Jogo\+De\+Tabuleiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destrutor virtual. 
+
+Garante que as subclasses possam realizar limpeza de recursos adequadamente. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classJogoDeTabuleiro_afdb0e67a0d441c7ee273b66cd2ef5e6c}\label{classJogoDeTabuleiro_afdb0e67a0d441c7ee273b66cd2ef5e6c} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!imprimirTabuleiro@{imprimirTabuleiro}}
+\index{imprimirTabuleiro@{imprimirTabuleiro}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{imprimirTabuleiro()}{imprimirTabuleiro()}}
+{\footnotesize\ttfamily virtual void Jogo\+De\+Tabuleiro\+::imprimir\+Tabuleiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Imprime o tabuleiro no console. 
+
+Deve ser implementado para exibir o estado atual do tabuleiro de maneira visualmente clara. 
+
+Implemented in \mbox{\hyperlink{classJogoDaVelha_af4b39f42de04815acaedab9f23d15be5}{Jogo\+Da\+Velha}}, \mbox{\hyperlink{classLig4_a9a1879a8690094855fefcc2a0732c027}{Lig4}}, and \mbox{\hyperlink{classReversi_a70e4802c43dd751991e414c9dca55b2b}{Reversi}}.
+
+\Hypertarget{classJogoDeTabuleiro_a3b89fafb8ebd31a0926568918edbaf44}\label{classJogoDeTabuleiro_a3b89fafb8ebd31a0926568918edbaf44} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!iniciarJogo@{iniciarJogo}}
+\index{iniciarJogo@{iniciarJogo}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{iniciarJogo()}{iniciarJogo()}}
+{\footnotesize\ttfamily virtual void Jogo\+De\+Tabuleiro\+::iniciar\+Jogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Inicializa o estado do jogo. 
+
+Deve ser implementado para configurar o tabuleiro e quaisquer variáveis necessárias antes do início do jogo. 
+
+Implemented in \mbox{\hyperlink{classJogoDaVelha_a495b6a77850019afefa428104d4c677f}{Jogo\+Da\+Velha}}, \mbox{\hyperlink{classLig4_aadecde695d2a9489f60f82b4f2455b75}{Lig4}}, and \mbox{\hyperlink{classReversi_a31c0e14513a060458d3ced516c5da2f0}{Reversi}}.
+
+\Hypertarget{classJogoDeTabuleiro_a7fa3437977e63f285931228b196ef7a5}\label{classJogoDeTabuleiro_a7fa3437977e63f285931228b196ef7a5} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!jogadaValida@{jogadaValida}}
+\index{jogadaValida@{jogadaValida}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{jogadaValida()}{jogadaValida()}}
+{\footnotesize\ttfamily virtual bool Jogo\+De\+Tabuleiro\+::jogada\+Valida (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Verifica se uma jogada é válida. 
+
+Este método deve validar se a posição especificada está dentro dos limites do tabuleiro e se a célula correspondente está disponível.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Índice da linha a ser verificada. \\
+\hline
+{\em coluna} & Índice da coluna a ser verificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se a jogada é válida. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classJogoDaVelha_a60190104ff501495fea9f2312eeaf35e}{Jogo\+Da\+Velha}}, \mbox{\hyperlink{classLig4_ab72a0c02d133beb8bca6fc968f67885a}{Lig4}}, and \mbox{\hyperlink{classReversi_a3b86c0db4f9c33a919f889f8aa874782}{Reversi}}.
+
+\Hypertarget{classJogoDeTabuleiro_a88744c91679f9f43d76d15a35b56e7e1}\label{classJogoDeTabuleiro_a88744c91679f9f43d76d15a35b56e7e1} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!realizarJogada@{realizarJogada}}
+\index{realizarJogada@{realizarJogada}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{realizarJogada()}{realizarJogada()}}
+{\footnotesize\ttfamily virtual bool Jogo\+De\+Tabuleiro\+::realizar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Realiza uma jogada no tabuleiro. 
+
+O método deve ser implementado para marcar o tabuleiro com base nos índices fornecidos de linha e coluna, se a jogada for válida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Índice da linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & Índice da coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se a jogada foi realizada com sucesso. 
+
+false Se a jogada for inválida. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classJogoDaVelha_a063917557d3c4db03ae9bb46dc59623b}{Jogo\+Da\+Velha}}, \mbox{\hyperlink{classLig4_a14c4344beeb6f89b2316adea39951795}{Lig4}}, and \mbox{\hyperlink{classReversi_a3dcada57b5cd6fbf07fb0bd56a650af5}{Reversi}}.
+
+\Hypertarget{classJogoDeTabuleiro_a3d38c00071c5b9207916a18609463f55}\label{classJogoDeTabuleiro_a3d38c00071c5b9207916a18609463f55} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!tabuleiroCheio@{tabuleiroCheio}}
+\index{tabuleiroCheio@{tabuleiroCheio}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{tabuleiroCheio()}{tabuleiroCheio()}}
+{\footnotesize\ttfamily virtual bool Jogo\+De\+Tabuleiro\+::tabuleiro\+Cheio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Verifica se o tabuleiro está cheio. 
+
+Deve ser implementado para determinar se todas as células do tabuleiro estão ocupadas.
+
+\begin{DoxyReturn}{Returns}
+true Se o tabuleiro está completamente preenchido. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classJogoDaVelha_acec03af79be4219899dd1330fdf59d81}{Jogo\+Da\+Velha}}, \mbox{\hyperlink{classLig4_a23f7cf4ae90eccb229dd8684fc0258e0}{Lig4}}, and \mbox{\hyperlink{classReversi_a06ee3bb39463a9ee15e274c5b74edd34}{Reversi}}.
+
+\Hypertarget{classJogoDeTabuleiro_a25ca4ce9c215c1dad37399b53c97085a}\label{classJogoDeTabuleiro_a25ca4ce9c215c1dad37399b53c97085a} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!verificarVitoria@{verificarVitoria}}
+\index{verificarVitoria@{verificarVitoria}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{verificarVitoria()}{verificarVitoria()}}
+{\footnotesize\ttfamily virtual bool Jogo\+De\+Tabuleiro\+::verificar\+Vitoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Verifica se houve uma vitória no jogo. 
+
+Este método deve verificar as condições de vitória específicas para o jogo.
+
+\begin{DoxyReturn}{Returns}
+true Se um jogador venceu o jogo. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classJogoDaVelha_a009bd9a1f26280c19743e1de20cfbd0e}{Jogo\+Da\+Velha}}, \mbox{\hyperlink{classLig4_a4060a4a0515ffe048044d85895ca2bf6}{Lig4}}, and \mbox{\hyperlink{classReversi_abae7f755565ced7d433bd5d898543836}{Reversi}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classJogoDeTabuleiro_a677a040d103daf070ea125a9b78adf9d}\label{classJogoDeTabuleiro_a677a040d103daf070ea125a9b78adf9d} 
+\index{JogoDeTabuleiro@{JogoDeTabuleiro}!tabuleiro@{tabuleiro}}
+\index{tabuleiro@{tabuleiro}!JogoDeTabuleiro@{JogoDeTabuleiro}}
+\doxysubsubsection{\texorpdfstring{tabuleiro}{tabuleiro}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$char$>$ $>$ Jogo\+De\+Tabuleiro\+::tabuleiro\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Representação do tabuleiro como uma matriz 2D de caracteres. 
+
+Cada célula do tabuleiro é representada por um caractere. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/jogos\+\_\+tabuleiro.\+hpp\end{DoxyCompactItemize}

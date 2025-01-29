@@ -1,0 +1,161 @@
+\doxysection{Estatisticas Class Reference}
+\hypertarget{classEstatisticas}{}\label{classEstatisticas}\index{Estatisticas@{Estatisticas}}
+
+
+Classe para gerenciar estatísticas de vitórias e derrotas de diferentes jogos.  
+
+
+
+
+{\ttfamily \#include $<$estatisticas.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEstatisticas_a7b0e9c4ea7b408c9cf3f4a26771172bf}{Estatisticas}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEstatisticas_ad07e7610cd04956975781327e432e900}{incrementar\+Vitoria}} (char jogo)
+\begin{DoxyCompactList}\small\item\em Incrementa o número de vitórias para o jogo especificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEstatisticas_a4369ac13d94e075ab0a7dbb8239fd249}{incrementar\+Derrota}} (char jogo)
+\begin{DoxyCompactList}\small\item\em Incrementa o número de derrotas para o jogo especificado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEstatisticas_ae932c4a45d440d8ead58aad38bff18d9}{get\+Vitorias}} (char jogo) const
+\begin{DoxyCompactList}\small\item\em Retorna o número de vitórias para o jogo especificado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEstatisticas_ad94871731dc68eb3a9957db324bd5fe5}{get\+Derrotas}} (char jogo) const
+\begin{DoxyCompactList}\small\item\em Retorna o número de derrotas para o jogo especificado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEstatisticas_a1cc8c320783d23bc74611c7842b13452}{imprimir\+Estatisticas}} () const
+\begin{DoxyCompactList}\small\item\em Imprime as estatísticas de vitórias e derrotas para todos os jogos. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classEstatisticas_aba0d72ea537d14085d2c5b959380f769}{serializar}} () const
+\begin{DoxyCompactList}\small\item\em Serializa os dados de vitórias e derrotas em uma string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEstatisticas_a2d05ac11b6f034d79d710788499097dd}{desserializar}} (const std\+::string \&dados)
+\begin{DoxyCompactList}\small\item\em Desserializa uma string e preenche os mapas de vitórias e derrotas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe para gerenciar estatísticas de vitórias e derrotas de diferentes jogos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEstatisticas_a7b0e9c4ea7b408c9cf3f4a26771172bf}\label{classEstatisticas_a7b0e9c4ea7b408c9cf3f4a26771172bf} 
+\index{Estatisticas@{Estatisticas}!Estatisticas@{Estatisticas}}
+\index{Estatisticas@{Estatisticas}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{Estatisticas()}{Estatisticas()}}
+{\footnotesize\ttfamily Estatisticas\+::\+Estatisticas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor padrão. 
+
+Inicializa os mapas de vitórias e derrotas com valores zerados para os jogos padrão (\textquotesingle{}R\textquotesingle{}, \textquotesingle{}L\textquotesingle{}, \textquotesingle{}V\textquotesingle{}). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEstatisticas_a2d05ac11b6f034d79d710788499097dd}\label{classEstatisticas_a2d05ac11b6f034d79d710788499097dd} 
+\index{Estatisticas@{Estatisticas}!desserializar@{desserializar}}
+\index{desserializar@{desserializar}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{desserializar()}{desserializar()}}
+{\footnotesize\ttfamily void Estatisticas\+::desserializar (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dados }\end{DoxyParamCaption})}
+
+
+
+Desserializa uma string e preenche os mapas de vitórias e derrotas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dados} & String no formato "{}$<$jogo$>$,$<$vitórias$>$,$<$derrotas$>$;"{}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEstatisticas_ad94871731dc68eb3a9957db324bd5fe5}\label{classEstatisticas_ad94871731dc68eb3a9957db324bd5fe5} 
+\index{Estatisticas@{Estatisticas}!getDerrotas@{getDerrotas}}
+\index{getDerrotas@{getDerrotas}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{getDerrotas()}{getDerrotas()}}
+{\footnotesize\ttfamily int Estatisticas\+::get\+Derrotas (\begin{DoxyParamCaption}\item[{char}]{jogo }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o número de derrotas para o jogo especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Caractere que identifica o jogo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Número de derrotas para o jogo ou 0 se o jogo não existir no mapa. 
+\end{DoxyReturn}
+\Hypertarget{classEstatisticas_ae932c4a45d440d8ead58aad38bff18d9}\label{classEstatisticas_ae932c4a45d440d8ead58aad38bff18d9} 
+\index{Estatisticas@{Estatisticas}!getVitorias@{getVitorias}}
+\index{getVitorias@{getVitorias}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{getVitorias()}{getVitorias()}}
+{\footnotesize\ttfamily int Estatisticas\+::get\+Vitorias (\begin{DoxyParamCaption}\item[{char}]{jogo }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o número de vitórias para o jogo especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Caractere que identifica o jogo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Número de vitórias para o jogo ou 0 se o jogo não existir no mapa. 
+\end{DoxyReturn}
+\Hypertarget{classEstatisticas_a1cc8c320783d23bc74611c7842b13452}\label{classEstatisticas_a1cc8c320783d23bc74611c7842b13452} 
+\index{Estatisticas@{Estatisticas}!imprimirEstatisticas@{imprimirEstatisticas}}
+\index{imprimirEstatisticas@{imprimirEstatisticas}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{imprimirEstatisticas()}{imprimirEstatisticas()}}
+{\footnotesize\ttfamily void Estatisticas\+::imprimir\+Estatisticas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime as estatísticas de vitórias e derrotas para todos os jogos. 
+
+O formato de saída é\+: "{}$<$jogo$>$ -\/ V\+: $<$vitórias$>$ D\+: $<$derrotas$>$"{}. \Hypertarget{classEstatisticas_a4369ac13d94e075ab0a7dbb8239fd249}\label{classEstatisticas_a4369ac13d94e075ab0a7dbb8239fd249} 
+\index{Estatisticas@{Estatisticas}!incrementarDerrota@{incrementarDerrota}}
+\index{incrementarDerrota@{incrementarDerrota}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{incrementarDerrota()}{incrementarDerrota()}}
+{\footnotesize\ttfamily void Estatisticas\+::incrementar\+Derrota (\begin{DoxyParamCaption}\item[{char}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Incrementa o número de derrotas para o jogo especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Caractere que identifica o jogo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEstatisticas_ad07e7610cd04956975781327e432e900}\label{classEstatisticas_ad07e7610cd04956975781327e432e900} 
+\index{Estatisticas@{Estatisticas}!incrementarVitoria@{incrementarVitoria}}
+\index{incrementarVitoria@{incrementarVitoria}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{incrementarVitoria()}{incrementarVitoria()}}
+{\footnotesize\ttfamily void Estatisticas\+::incrementar\+Vitoria (\begin{DoxyParamCaption}\item[{char}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Incrementa o número de vitórias para o jogo especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Caractere que identifica o jogo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEstatisticas_aba0d72ea537d14085d2c5b959380f769}\label{classEstatisticas_aba0d72ea537d14085d2c5b959380f769} 
+\index{Estatisticas@{Estatisticas}!serializar@{serializar}}
+\index{serializar@{serializar}!Estatisticas@{Estatisticas}}
+\doxysubsubsection{\texorpdfstring{serializar()}{serializar()}}
+{\footnotesize\ttfamily std\+::string Estatisticas\+::serializar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Serializa os dados de vitórias e derrotas em uma string. 
+
+O formato da string é\+: "{}$<$jogo$>$,$<$vitórias$>$,$<$derrotas$>$;"{} para cada jogo.
+
+\begin{DoxyReturn}{Returns}
+String serializada contendo os dados. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/estatisticas.\+hpp\item 
+src/estatisticas.\+cpp\end{DoxyCompactItemize}

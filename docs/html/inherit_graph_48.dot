@@ -1,0 +1,15 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="JogoDeTabuleiro",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classJogoDeTabuleiro.html",tooltip="Classe abstrata que define a interface para jogos de tabuleiro."];
+  Node0 -> Node1 [id="edge17_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="JogoDaVelha",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classJogoDaVelha.html",tooltip="Classe que implementa o jogo da velha como um jogo de tabuleiro."];
+  Node0 -> Node2 [id="edge18_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Lig4",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classLig4.html",tooltip="Classe que implementa o jogo Lig4 (Conecta 4)."];
+  Node0 -> Node3 [id="edge19_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Reversi",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classReversi.html",tooltip="Classe que representa o jogo Reversi (também conhecido como Othello)."];
+}

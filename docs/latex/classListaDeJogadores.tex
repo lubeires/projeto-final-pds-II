@@ -1,0 +1,172 @@
+\doxysection{Lista\+De\+Jogadores Class Reference}
+\hypertarget{classListaDeJogadores}{}\label{classListaDeJogadores}\index{ListaDeJogadores@{ListaDeJogadores}}
+
+
+Classe que representa uma lista de jogadores.  
+
+
+
+
+{\ttfamily \#include $<$lista\+\_\+de\+\_\+jogadores.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classListaDeJogadores_a9e2efb23a0e600f1a78d8382082c072d}{Lista\+De\+Jogadores}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classListaDeJogadores}{Lista\+De\+Jogadores}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classListaDeJogadores_aa70b74615ef568c3b900ff038fff0341}{\texorpdfstring{$\sim$}{\string~}\+Lista\+De\+Jogadores}} ()
+\begin{DoxyCompactList}\small\item\em Destruidor da classe \doxylink{classListaDeJogadores}{Lista\+De\+Jogadores}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classListaDeJogadores_abeeff1dd0017a07a79d9a8204507fabb}{adicionar\+Jogador}} (const \mbox{\hyperlink{classJogador}{Jogador}} \&jogador)
+\begin{DoxyCompactList}\small\item\em Adiciona um jogador à lista de jogadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classListaDeJogadores_a10199bbaea47e72f182d21d179c09b64}{remover\+Jogador}} (const std\+::string \&apelido)
+\begin{DoxyCompactList}\small\item\em Remove um jogador da lista de jogadores pelo apelido. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classJogador}{Jogador}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classListaDeJogadores_a918080458e2ba6f8a6824c703e20543a}{buscar\+Jogador}} (const std\+::string \&apelido)
+\begin{DoxyCompactList}\small\item\em Busca um jogador na lista pelo apelido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classListaDeJogadores_a7c6e6dbf8910ba64822f2ed4cf5396ef}{salvar\+Em\+Arquivo}} (const std\+::string \&nome\+Arquivo) const
+\begin{DoxyCompactList}\small\item\em Salva a lista de jogadores em um arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classListaDeJogadores_aec4f0a7cb1a4a74ad54651d21b76e8a6}{carregar\+De\+Arquivo}} (const std\+::string \&nome\+Arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega os jogadores de um arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classListaDeJogadores_ad10fb42bc26e48e787ffa40512d32546}{listar\+Jogadores}} (char criterio) const
+\begin{DoxyCompactList}\small\item\em Lista todos os jogadores, ordenados por um critério. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa uma lista de jogadores. 
+
+Esta classe gerencia uma lista de objetos do tipo {\ttfamily \doxylink{classJogador}{Jogador}}. Ela permite a adição, remoção, busca, e listagem de jogadores. Além disso, também realiza a persistência dos jogadores em arquivos de texto para garantir que os dados sejam mantidos entre diferentes execuções do programa. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classListaDeJogadores_a9e2efb23a0e600f1a78d8382082c072d}\label{classListaDeJogadores_a9e2efb23a0e600f1a78d8382082c072d} 
+\index{ListaDeJogadores@{ListaDeJogadores}!ListaDeJogadores@{ListaDeJogadores}}
+\index{ListaDeJogadores@{ListaDeJogadores}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{ListaDeJogadores()}{ListaDeJogadores()}}
+{\footnotesize\ttfamily Lista\+De\+Jogadores\+::\+Lista\+De\+Jogadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classListaDeJogadores}{Lista\+De\+Jogadores}. 
+
+O construtor verifica a existência de um diretório para armazenar o arquivo de jogadores e cria o arquivo {\ttfamily jogadores.\+txt} caso ele não exista. Caso o arquivo exista, os dados são carregados dele. \Hypertarget{classListaDeJogadores_aa70b74615ef568c3b900ff038fff0341}\label{classListaDeJogadores_aa70b74615ef568c3b900ff038fff0341} 
+\index{ListaDeJogadores@{ListaDeJogadores}!````~ListaDeJogadores@{\texorpdfstring{$\sim$}{\string~}ListaDeJogadores}}
+\index{````~ListaDeJogadores@{\texorpdfstring{$\sim$}{\string~}ListaDeJogadores}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaDeJogadores()}{\string~ListaDeJogadores()}}
+{\footnotesize\ttfamily Lista\+De\+Jogadores\+::\texorpdfstring{$\sim$}{\string~}\+Lista\+De\+Jogadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruidor da classe \doxylink{classListaDeJogadores}{Lista\+De\+Jogadores}. 
+
+O destruidor verifica se o arquivo {\ttfamily jogadores.\+txt} está vazio. Caso esteja, o arquivo é removido. Caso contrário, os dados da lista de jogadores são salvos no arquivo. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classListaDeJogadores_abeeff1dd0017a07a79d9a8204507fabb}\label{classListaDeJogadores_abeeff1dd0017a07a79d9a8204507fabb} 
+\index{ListaDeJogadores@{ListaDeJogadores}!adicionarJogador@{adicionarJogador}}
+\index{adicionarJogador@{adicionarJogador}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{adicionarJogador()}{adicionarJogador()}}
+{\footnotesize\ttfamily void Lista\+De\+Jogadores\+::adicionar\+Jogador (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classJogador}{Jogador}} \&}]{jogador }\end{DoxyParamCaption})}
+
+
+
+Adiciona um jogador à lista de jogadores. 
+
+Este método verifica se já existe um jogador com o mesmo apelido antes de adicionar o novo jogador. Caso o apelido já exista, um erro é exibido.
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogador} & O objeto do tipo {\ttfamily \doxylink{classJogador}{Jogador}} a ser adicionado à lista. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classListaDeJogadores_a918080458e2ba6f8a6824c703e20543a}\label{classListaDeJogadores_a918080458e2ba6f8a6824c703e20543a} 
+\index{ListaDeJogadores@{ListaDeJogadores}!buscarJogador@{buscarJogador}}
+\index{buscarJogador@{buscarJogador}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{buscarJogador()}{buscarJogador()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classJogador}{Jogador}} \texorpdfstring{$\ast$}{*} Lista\+De\+Jogadores\+::buscar\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido }\end{DoxyParamCaption})}
+
+
+
+Busca um jogador na lista pelo apelido. 
+
+Este método busca um jogador pelo seu apelido. Caso o jogador seja encontrado, um ponteiro para o objeto {\ttfamily \doxylink{classJogador}{Jogador}} correspondente é retornado. Caso contrário, o método retorna um ponteiro nulo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser buscado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o jogador encontrado, ou {\ttfamily nullptr} se não encontrado. 
+\end{DoxyReturn}
+\Hypertarget{classListaDeJogadores_aec4f0a7cb1a4a74ad54651d21b76e8a6}\label{classListaDeJogadores_aec4f0a7cb1a4a74ad54651d21b76e8a6} 
+\index{ListaDeJogadores@{ListaDeJogadores}!carregarDeArquivo@{carregarDeArquivo}}
+\index{carregarDeArquivo@{carregarDeArquivo}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{carregarDeArquivo()}{carregarDeArquivo()}}
+{\footnotesize\ttfamily void Lista\+De\+Jogadores\+::carregar\+De\+Arquivo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+Arquivo }\end{DoxyParamCaption})}
+
+
+
+Carrega os jogadores de um arquivo. 
+
+Este método lê os dados de um arquivo e desserializa os jogadores, populando a lista de jogadores com os dados lidos do arquivo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & O nome do arquivo de onde os jogadores serão carregados. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classListaDeJogadores_ad10fb42bc26e48e787ffa40512d32546}\label{classListaDeJogadores_ad10fb42bc26e48e787ffa40512d32546} 
+\index{ListaDeJogadores@{ListaDeJogadores}!listarJogadores@{listarJogadores}}
+\index{listarJogadores@{listarJogadores}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{listarJogadores()}{listarJogadores()}}
+{\footnotesize\ttfamily void Lista\+De\+Jogadores\+::listar\+Jogadores (\begin{DoxyParamCaption}\item[{char}]{criterio }\end{DoxyParamCaption}) const}
+
+
+
+Lista todos os jogadores, ordenados por um critério. 
+
+Este método permite listar os jogadores da lista, ordenados por um critério especificado. O critério pode ser o nome ou apelido do jogador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterio} & O critério de ordenação\+: \textquotesingle{}A\textquotesingle{} para apelido e \textquotesingle{}N\textquotesingle{} para nome. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classListaDeJogadores_a10199bbaea47e72f182d21d179c09b64}\label{classListaDeJogadores_a10199bbaea47e72f182d21d179c09b64} 
+\index{ListaDeJogadores@{ListaDeJogadores}!removerJogador@{removerJogador}}
+\index{removerJogador@{removerJogador}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{removerJogador()}{removerJogador()}}
+{\footnotesize\ttfamily void Lista\+De\+Jogadores\+::remover\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido }\end{DoxyParamCaption})}
+
+
+
+Remove um jogador da lista de jogadores pelo apelido. 
+
+Este método busca o jogador pelo seu apelido. Caso o jogador seja encontrado, ele é removido da lista. Caso contrário, um erro é exibido.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser removido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classListaDeJogadores_a7c6e6dbf8910ba64822f2ed4cf5396ef}\label{classListaDeJogadores_a7c6e6dbf8910ba64822f2ed4cf5396ef} 
+\index{ListaDeJogadores@{ListaDeJogadores}!salvarEmArquivo@{salvarEmArquivo}}
+\index{salvarEmArquivo@{salvarEmArquivo}!ListaDeJogadores@{ListaDeJogadores}}
+\doxysubsubsection{\texorpdfstring{salvarEmArquivo()}{salvarEmArquivo()}}
+{\footnotesize\ttfamily void Lista\+De\+Jogadores\+::salvar\+Em\+Arquivo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+Arquivo }\end{DoxyParamCaption}) const}
+
+
+
+Salva a lista de jogadores em um arquivo. 
+
+Este método grava todos os jogadores da lista no arquivo especificado. Cada jogador é serializado como uma linha no arquivo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Arquivo} & O nome do arquivo onde os jogadores serão salvos. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/lista\+\_\+de\+\_\+jogadores.\+hpp\item 
+src/lista\+\_\+de\+\_\+jogadores.\+cpp\end{DoxyCompactItemize}

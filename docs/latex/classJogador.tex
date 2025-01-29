@@ -1,0 +1,168 @@
+\doxysection{Jogador Class Reference}
+\hypertarget{classJogador}{}\label{classJogador}\index{Jogador@{Jogador}}
+
+
+Classe que representa um jogador com informações pessoais e estatísticas de desempenho.  
+
+
+
+
+{\ttfamily \#include $<$jogador.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJogador_a11932150131afc0c73286dc27c1c198c}{Jogador}} (const std\+::string \&apelido, const std\+::string \&nome)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classJogador}{Jogador}. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classJogador_a31783bb130706f24ce9b62e7cad8a417}{get\+Apelido}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o apelido do jogador. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classJogador_ab3623db08558b2cfcff3b75d8f7d60f3}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome completo do jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a1b2d80f4da6451a06e986cf1443a28cf}{incrementar\+Vitoria}} (char jogo)
+\begin{DoxyCompactList}\small\item\em Incrementa o número de vitórias do jogador para um tipo específico de jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_ab52dfdbfae0695c3b41eb5728b3e4be5}{incrementar\+Derrota}} (char jogo)
+\begin{DoxyCompactList}\small\item\em Incrementa o número de derrotas do jogador para um tipo específico de jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a3d9940a00f06d7f215c4f913f3720f73}{imprimir\+Estatisticas}} () const
+\begin{DoxyCompactList}\small\item\em Imprime as estatísticas de desempenho do jogador. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classJogador_af9571feb75211d55984115362456dd6d}{serializar}} () const
+\begin{DoxyCompactList}\small\item\em Serializa os dados do jogador em uma string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classJogador}{Jogador}} \mbox{\hyperlink{classJogador_a922604734ff50a27c9f221b43cb9b117}{desserializar}} (const std\+::string \&linha)
+\begin{DoxyCompactList}\small\item\em Desserializa uma string para criar um objeto \doxylink{classJogador}{Jogador}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa um jogador com informações pessoais e estatísticas de desempenho. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classJogador_a11932150131afc0c73286dc27c1c198c}\label{classJogador_a11932150131afc0c73286dc27c1c198c} 
+\index{Jogador@{Jogador}!Jogador@{Jogador}}
+\index{Jogador@{Jogador}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{Jogador()}{Jogador()}}
+{\footnotesize\ttfamily Jogador\+::\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido,  }\item[{const std\+::string \&}]{nome }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classJogador}{Jogador}. 
+
+Inicializa o jogador com apelido e nome.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & Apelido do jogador. \\
+\hline
+{\em nome} & Nome completo do jogador. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classJogador_a922604734ff50a27c9f221b43cb9b117}\label{classJogador_a922604734ff50a27c9f221b43cb9b117} 
+\index{Jogador@{Jogador}!desserializar@{desserializar}}
+\index{desserializar@{desserializar}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{desserializar()}{desserializar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classJogador}{Jogador}} Jogador\+::desserializar (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Desserializa uma string para criar um objeto \doxylink{classJogador}{Jogador}. 
+
+A string deve estar no formato\+: "{}$<$apelido$>$\texorpdfstring{$\vert$}{|}$<$nome$>$\texorpdfstring{$\vert$}{|}$<$estatísticas$>$"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & String contendo os dados serializados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto \doxylink{classJogador}{Jogador} inicializado com os dados desserializados. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_a31783bb130706f24ce9b62e7cad8a417}\label{classJogador_a31783bb130706f24ce9b62e7cad8a417} 
+\index{Jogador@{Jogador}!getApelido@{getApelido}}
+\index{getApelido@{getApelido}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getApelido()}{getApelido()}}
+{\footnotesize\ttfamily const std\+::string \& Jogador\+::get\+Apelido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o apelido do jogador. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string do apelido. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_ab3623db08558b2cfcff3b75d8f7d60f3}\label{classJogador_ab3623db08558b2cfcff3b75d8f7d60f3} 
+\index{Jogador@{Jogador}!getNome@{getNome}}
+\index{getNome@{getNome}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily const std\+::string \& Jogador\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome completo do jogador. 
+
+\begin{DoxyReturn}{Returns}
+Referência constante para a string do nome. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_a3d9940a00f06d7f215c4f913f3720f73}\label{classJogador_a3d9940a00f06d7f215c4f913f3720f73} 
+\index{Jogador@{Jogador}!imprimirEstatisticas@{imprimirEstatisticas}}
+\index{imprimirEstatisticas@{imprimirEstatisticas}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{imprimirEstatisticas()}{imprimirEstatisticas()}}
+{\footnotesize\ttfamily void Jogador\+::imprimir\+Estatisticas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime as estatísticas de desempenho do jogador. 
+
+Exibe o apelido, nome e estatísticas de vitórias e derrotas em um formato legível. \Hypertarget{classJogador_ab52dfdbfae0695c3b41eb5728b3e4be5}\label{classJogador_ab52dfdbfae0695c3b41eb5728b3e4be5} 
+\index{Jogador@{Jogador}!incrementarDerrota@{incrementarDerrota}}
+\index{incrementarDerrota@{incrementarDerrota}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{incrementarDerrota()}{incrementarDerrota()}}
+{\footnotesize\ttfamily void Jogador\+::incrementar\+Derrota (\begin{DoxyParamCaption}\item[{char}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Incrementa o número de derrotas do jogador para um tipo específico de jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Caractere que identifica o tipo de jogo (ex.\+: \textquotesingle{}R\textquotesingle{}, \textquotesingle{}L\textquotesingle{}, \textquotesingle{}V\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a1b2d80f4da6451a06e986cf1443a28cf}\label{classJogador_a1b2d80f4da6451a06e986cf1443a28cf} 
+\index{Jogador@{Jogador}!incrementarVitoria@{incrementarVitoria}}
+\index{incrementarVitoria@{incrementarVitoria}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{incrementarVitoria()}{incrementarVitoria()}}
+{\footnotesize\ttfamily void Jogador\+::incrementar\+Vitoria (\begin{DoxyParamCaption}\item[{char}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Incrementa o número de vitórias do jogador para um tipo específico de jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Caractere que identifica o tipo de jogo (ex.\+: \textquotesingle{}R\textquotesingle{}, \textquotesingle{}L\textquotesingle{}, \textquotesingle{}V\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_af9571feb75211d55984115362456dd6d}\label{classJogador_af9571feb75211d55984115362456dd6d} 
+\index{Jogador@{Jogador}!serializar@{serializar}}
+\index{serializar@{serializar}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{serializar()}{serializar()}}
+{\footnotesize\ttfamily std\+::string Jogador\+::serializar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Serializa os dados do jogador em uma string. 
+
+O formato da string é\+: "{}$<$apelido$>$\texorpdfstring{$\vert$}{|}$<$nome$>$\texorpdfstring{$\vert$}{|}$<$estatísticas$>$"{}.
+
+\begin{DoxyReturn}{Returns}
+Uma string contendo os dados serializados do jogador. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/jogador.\+hpp\item 
+src/jogador.\+cpp\end{DoxyCompactItemize}

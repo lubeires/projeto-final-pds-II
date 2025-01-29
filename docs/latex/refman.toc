@@ -1,0 +1,96 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}README}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Estatisticas Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Constructor \& Destructor Documentation}{10}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Estatisticas()}{10}{subsubsection.5.1.2.1}%
+\contentsline {subsection}{\numberline {5.1.3}Member Function Documentation}{10}{subsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}desserializar()}{10}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}getDerrotas()}{10}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}getVitorias()}{10}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.4}imprimirEstatisticas()}{11}{subsubsection.5.1.3.4}%
+\contentsline {subsubsection}{\numberline {5.1.3.5}incrementarDerrota()}{11}{subsubsection.5.1.3.5}%
+\contentsline {subsubsection}{\numberline {5.1.3.6}incrementarVitoria()}{11}{subsubsection.5.1.3.6}%
+\contentsline {subsubsection}{\numberline {5.1.3.7}serializar()}{11}{subsubsection.5.1.3.7}%
+\contentsline {section}{\numberline {5.2}Gerenciador\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}De\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogos Class Reference}{12}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{12}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Member Function Documentation}{12}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}executarPartida()}{12}{subsubsection.5.2.2.1}%
+\contentsline {section}{\numberline {5.3}Jogador Class Reference}{13}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{14}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constructor \& Destructor Documentation}{14}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Jogador()}{14}{subsubsection.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.3.3}Member Function Documentation}{14}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}desserializar()}{14}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}getApelido()}{14}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}getNome()}{15}{subsubsection.5.3.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.4}imprimirEstatisticas()}{15}{subsubsection.5.3.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.3.5}incrementarDerrota()}{15}{subsubsection.5.3.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.3.6}incrementarVitoria()}{15}{subsubsection.5.3.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.3.7}serializar()}{15}{subsubsection.5.3.3.7}%
+\contentsline {section}{\numberline {5.4}Jogo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Da\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Velha Class Reference}{16}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Jogo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}De\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tabuleiro Class Reference}{16}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{17}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Constructor \& Destructor Documentation}{17}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}$\sim $JogoDeTabuleiro()}{17}{subsubsection.5.5.2.1}%
+\contentsline {subsection}{\numberline {5.5.3}Member Function Documentation}{17}{subsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.3.1}imprimirTabuleiro()}{17}{subsubsection.5.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.5.3.2}iniciarJogo()}{17}{subsubsection.5.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.5.3.3}jogadaValida()}{17}{subsubsection.5.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.5.3.4}realizarJogada()}{18}{subsubsection.5.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.5.3.5}tabuleiroCheio()}{18}{subsubsection.5.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.5.3.6}verificarVitoria()}{19}{subsubsection.5.5.3.6}%
+\contentsline {subsection}{\numberline {5.5.4}Member Data Documentation}{19}{subsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.4.1}tabuleiro}{19}{subsubsection.5.5.4.1}%
+\contentsline {section}{\numberline {5.6}Lig4 Class Reference}{19}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{20}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Constructor \& Destructor Documentation}{20}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}Lig4()}{20}{subsubsection.5.6.2.1}%
+\contentsline {subsection}{\numberline {5.6.3}Member Function Documentation}{20}{subsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.1}imprimirTabuleiro()}{20}{subsubsection.5.6.3.1}%
+\contentsline {subsubsection}{\numberline {5.6.3.2}iniciarJogo()}{21}{subsubsection.5.6.3.2}%
+\contentsline {subsubsection}{\numberline {5.6.3.3}jogadaValida()}{21}{subsubsection.5.6.3.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.4}realizarJogada()}{21}{subsubsection.5.6.3.4}%
+\contentsline {subsubsection}{\numberline {5.6.3.5}tabuleiroCheio()}{22}{subsubsection.5.6.3.5}%
+\contentsline {subsubsection}{\numberline {5.6.3.6}verificarVitoria()}{22}{subsubsection.5.6.3.6}%
+\contentsline {section}{\numberline {5.7}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}De\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogadores Class Reference}{22}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{23}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Constructor \& Destructor Documentation}{23}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}ListaDeJogadores()}{23}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}$\sim $ListaDeJogadores()}{23}{subsubsection.5.7.2.2}%
+\contentsline {subsection}{\numberline {5.7.3}Member Function Documentation}{23}{subsection.5.7.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.1}adicionarJogador()}{23}{subsubsection.5.7.3.1}%
+\contentsline {subsubsection}{\numberline {5.7.3.2}buscarJogador()}{24}{subsubsection.5.7.3.2}%
+\contentsline {subsubsection}{\numberline {5.7.3.3}carregarDeArquivo()}{24}{subsubsection.5.7.3.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.4}listarJogadores()}{24}{subsubsection.5.7.3.4}%
+\contentsline {subsubsection}{\numberline {5.7.3.5}removerJogador()}{25}{subsubsection.5.7.3.5}%
+\contentsline {subsubsection}{\numberline {5.7.3.6}salvarEmArquivo()}{25}{subsubsection.5.7.3.6}%
+\contentsline {section}{\numberline {5.8}Reversi Class Reference}{25}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{26}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Constructor \& Destructor Documentation}{27}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}Reversi()}{27}{subsubsection.5.8.2.1}%
+\contentsline {subsection}{\numberline {5.8.3}Member Function Documentation}{27}{subsection.5.8.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.1}contarPecas()}{27}{subsubsection.5.8.3.1}%
+\contentsline {subsubsection}{\numberline {5.8.3.2}imprimirTabuleiro()}{27}{subsubsection.5.8.3.2}%
+\contentsline {subsubsection}{\numberline {5.8.3.3}iniciarJogo()}{27}{subsubsection.5.8.3.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.4}jogadaValida()}{28}{subsubsection.5.8.3.4}%
+\contentsline {subsubsection}{\numberline {5.8.3.5}realizarJogada()}{28}{subsubsection.5.8.3.5}%
+\contentsline {subsubsection}{\numberline {5.8.3.6}tabuleiroCheio()}{28}{subsubsection.5.8.3.6}%
+\contentsline {subsubsection}{\numberline {5.8.3.7}verificarVitoria()}{29}{subsubsection.5.8.3.7}%
+\contentsline {chapter}{\numberline {6}File Documentation}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}estatisticas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{31}{section.6.1}%
+\contentsline {section}{\numberline {6.2}gerenciador\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}de\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}jogos.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{31}{section.6.2}%
+\contentsline {section}{\numberline {6.3}jogador.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{32}{section.6.3}%
+\contentsline {section}{\numberline {6.4}jogo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}da\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}velha.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{32}{section.6.4}%
+\contentsline {section}{\numberline {6.5}jogos\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tabuleiro.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{32}{section.6.5}%
+\contentsline {section}{\numberline {6.6}lig4.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{33}{section.6.6}%
+\contentsline {section}{\numberline {6.7}lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}de\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}jogadores.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{33}{section.6.7}%
+\contentsline {section}{\numberline {6.8}reversi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hpp}{34}{section.6.8}%
+\contentsline {chapter}{Index}{35}{section*.16}%

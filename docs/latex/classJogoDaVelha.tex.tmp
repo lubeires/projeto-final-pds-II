@@ -1,0 +1,204 @@
+\doxysection{Jogo\+Da\+Velha Class Reference}
+\hypertarget{classJogoDaVelha}{}\label{classJogoDaVelha}\index{JogoDaVelha@{JogoDaVelha}}
+
+
+Classe que implementa o jogo da velha como um jogo de tabuleiro.  
+
+
+
+
+{\ttfamily \#include $<$jogo\+\_\+da\+\_\+velha.\+hpp$>$}
+
+
+
+Inheritance diagram for Jogo\+Da\+Velha\+:
+% FIG 0
+
+
+Collaboration diagram for Jogo\+Da\+Velha\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJogoDaVelha_a4cd8634f2b9f754fae92e2e6bc897c19}{Jogo\+Da\+Velha}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classJogoDaVelha}{Jogo\+Da\+Velha}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogoDaVelha_a495b6a77850019afefa428104d4c677f}{iniciar\+Jogo}} () override
+\begin{DoxyCompactList}\small\item\em Inicia o jogo, limpando o tabuleiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJogoDaVelha_a063917557d3c4db03ae9bb46dc59623b}{realizar\+Jogada}} (int linha, int coluna) override
+\begin{DoxyCompactList}\small\item\em Realiza uma jogada no tabuleiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJogoDaVelha_a009bd9a1f26280c19743e1de20cfbd0e}{verificar\+Vitoria}} () const override
+\begin{DoxyCompactList}\small\item\em Verifica se algum jogador venceu o jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogoDaVelha_af4b39f42de04815acaedab9f23d15be5}{imprimir\+Tabuleiro}} () const override
+\begin{DoxyCompactList}\small\item\em Imprime o estado atual do tabuleiro no console. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJogoDaVelha_a60190104ff501495fea9f2312eeaf35e}{jogada\+Valida}} (int linha, int coluna) const override
+\begin{DoxyCompactList}\small\item\em Verifica se uma jogada é válida. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJogoDaVelha_acec03af79be4219899dd1330fdf59d81}{tabuleiro\+Cheio}} () const override
+\begin{DoxyCompactList}\small\item\em Verifica se o tabuleiro está cheio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classJogoDeTabuleiro}{Jogo\+De\+Tabuleiro}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classJogoDeTabuleiro_aefe341883899b14d5cda472308c93e30}{\texorpdfstring{$\sim$}{\string~}\+Jogo\+De\+Tabuleiro}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classJogoDeTabuleiro}{Jogo\+De\+Tabuleiro}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries linhas}
+\begin{DoxyCompactList}\small\item\em Número de linhas do tabuleiro. \end{DoxyCompactList}\item 
+int {\bfseries colunas}
+\begin{DoxyCompactList}\small\item\em Número de colunas do tabuleiro. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ char $>$ $>$ \mbox{\hyperlink{classJogoDeTabuleiro_a677a040d103daf070ea125a9b78adf9d}{tabuleiro}}
+\begin{DoxyCompactList}\small\item\em Representação do tabuleiro como uma matriz 2D de caracteres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que implementa o jogo da velha como um jogo de tabuleiro. 
+
+A classe gerencia as regras, o estado do tabuleiro e o fluxo do jogo. É derivada da classe base \doxylink{classJogoDeTabuleiro}{Jogo\+De\+Tabuleiro}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classJogoDaVelha_a4cd8634f2b9f754fae92e2e6bc897c19}\label{classJogoDaVelha_a4cd8634f2b9f754fae92e2e6bc897c19} 
+\index{JogoDaVelha@{JogoDaVelha}!JogoDaVelha@{JogoDaVelha}}
+\index{JogoDaVelha@{JogoDaVelha}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{JogoDaVelha()}{JogoDaVelha()}}
+{\footnotesize\ttfamily Jogo\+Da\+Velha\+::\+Jogo\+Da\+Velha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classJogoDaVelha}{Jogo\+Da\+Velha}. 
+
+Inicializa o tabuleiro com dimensões de 3x3 e define o jogador inicial como \textquotesingle{}X\textquotesingle{}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classJogoDaVelha_af4b39f42de04815acaedab9f23d15be5}\label{classJogoDaVelha_af4b39f42de04815acaedab9f23d15be5} 
+\index{JogoDaVelha@{JogoDaVelha}!imprimirTabuleiro@{imprimirTabuleiro}}
+\index{imprimirTabuleiro@{imprimirTabuleiro}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{imprimirTabuleiro()}{imprimirTabuleiro()}}
+{\footnotesize\ttfamily void Jogo\+Da\+Velha\+::imprimir\+Tabuleiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Imprime o estado atual do tabuleiro no console. 
+
+Exibe o tabuleiro, substituindo células vazias (\textquotesingle{} \textquotesingle{}) por pontos (\textquotesingle{}.\textquotesingle{}) para maior clareza. 
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_afdb0e67a0d441c7ee273b66cd2ef5e6c}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classJogoDaVelha_a495b6a77850019afefa428104d4c677f}\label{classJogoDaVelha_a495b6a77850019afefa428104d4c677f} 
+\index{JogoDaVelha@{JogoDaVelha}!iniciarJogo@{iniciarJogo}}
+\index{iniciarJogo@{iniciarJogo}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{iniciarJogo()}{iniciarJogo()}}
+{\footnotesize\ttfamily void Jogo\+Da\+Velha\+::iniciar\+Jogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Inicia o jogo, limpando o tabuleiro. 
+
+Preenche todas as posições do tabuleiro com o caractere de espaço (\textquotesingle{} \textquotesingle{}). 
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a3b89fafb8ebd31a0926568918edbaf44}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classJogoDaVelha_a60190104ff501495fea9f2312eeaf35e}\label{classJogoDaVelha_a60190104ff501495fea9f2312eeaf35e} 
+\index{JogoDaVelha@{JogoDaVelha}!jogadaValida@{jogadaValida}}
+\index{jogadaValida@{jogadaValida}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{jogadaValida()}{jogadaValida()}}
+{\footnotesize\ttfamily bool Jogo\+Da\+Velha\+::jogada\+Valida (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se uma jogada é válida. 
+
+Uma jogada é válida se os índices de linha e coluna estão dentro dos limites do tabuleiro e a célula correspondente está vazia.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Índice da linha da jogada. \\
+\hline
+{\em coluna} & Índice da coluna da jogada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se a jogada é válida. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a7fa3437977e63f285931228b196ef7a5}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classJogoDaVelha_a063917557d3c4db03ae9bb46dc59623b}\label{classJogoDaVelha_a063917557d3c4db03ae9bb46dc59623b} 
+\index{JogoDaVelha@{JogoDaVelha}!realizarJogada@{realizarJogada}}
+\index{realizarJogada@{realizarJogada}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{realizarJogada()}{realizarJogada()}}
+{\footnotesize\ttfamily bool Jogo\+Da\+Velha\+::realizar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Realiza uma jogada no tabuleiro. 
+
+Marca a posição especificada no tabuleiro com o símbolo do jogador atual, se a jogada for válida, e alterna o jogador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Índice da linha onde a jogada será realizada (0 a 2). \\
+\hline
+{\em coluna} & Índice da coluna onde a jogada será realizada (0 a 2). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se a jogada foi realizada com sucesso. 
+
+false Se a jogada for inválida. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a88744c91679f9f43d76d15a35b56e7e1}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classJogoDaVelha_acec03af79be4219899dd1330fdf59d81}\label{classJogoDaVelha_acec03af79be4219899dd1330fdf59d81} 
+\index{JogoDaVelha@{JogoDaVelha}!tabuleiroCheio@{tabuleiroCheio}}
+\index{tabuleiroCheio@{tabuleiroCheio}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{tabuleiroCheio()}{tabuleiroCheio()}}
+{\footnotesize\ttfamily bool Jogo\+Da\+Velha\+::tabuleiro\+Cheio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se o tabuleiro está cheio. 
+
+O tabuleiro é considerado cheio se todas as células estão ocupadas por símbolos de jogadores.
+
+\begin{DoxyReturn}{Returns}
+true Se o tabuleiro está cheio. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a3d38c00071c5b9207916a18609463f55}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classJogoDaVelha_a009bd9a1f26280c19743e1de20cfbd0e}\label{classJogoDaVelha_a009bd9a1f26280c19743e1de20cfbd0e} 
+\index{JogoDaVelha@{JogoDaVelha}!verificarVitoria@{verificarVitoria}}
+\index{verificarVitoria@{verificarVitoria}!JogoDaVelha@{JogoDaVelha}}
+\doxysubsubsection{\texorpdfstring{verificarVitoria()}{verificarVitoria()}}
+{\footnotesize\ttfamily bool Jogo\+Da\+Velha\+::verificar\+Vitoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se algum jogador venceu o jogo. 
+
+Verifica linhas, colunas e diagonais em busca de três símbolos iguais consecutivos.
+
+\begin{DoxyReturn}{Returns}
+true Se um jogador venceu o jogo. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a25ca4ce9c215c1dad37399b53c97085a}{Jogo\+De\+Tabuleiro}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/jogo\+\_\+da\+\_\+velha.\+hpp\item 
+src/jogo\+\_\+da\+\_\+velha.\+cpp\end{DoxyCompactItemize}

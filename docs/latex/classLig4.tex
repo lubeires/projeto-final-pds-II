@@ -1,0 +1,204 @@
+\doxysection{Lig4 Class Reference}
+\hypertarget{classLig4}{}\label{classLig4}\index{Lig4@{Lig4}}
+
+
+Classe que implementa o jogo \doxylink{classLig4}{Lig4} (Conecta 4).  
+
+
+
+
+{\ttfamily \#include $<$lig4.\+hpp$>$}
+
+
+
+Inheritance diagram for Lig4\+:
+% FIG 0
+
+
+Collaboration diagram for Lig4\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLig4_adffdeddf3d20829f752913801554126d}{Lig4}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \doxylink{classLig4}{Lig4}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_aadecde695d2a9489f60f82b4f2455b75}{iniciar\+Jogo}} () override
+\begin{DoxyCompactList}\small\item\em Inicializa o tabuleiro do jogo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_a14c4344beeb6f89b2316adea39951795}{realizar\+Jogada}} (int linha, int coluna) override
+\begin{DoxyCompactList}\small\item\em Realiza uma jogada no tabuleiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_a4060a4a0515ffe048044d85895ca2bf6}{verificar\+Vitoria}} () const override
+\begin{DoxyCompactList}\small\item\em Verifica se houve vitória no jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_a9a1879a8690094855fefcc2a0732c027}{imprimir\+Tabuleiro}} () const override
+\begin{DoxyCompactList}\small\item\em Imprime o tabuleiro no console. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_ab72a0c02d133beb8bca6fc968f67885a}{jogada\+Valida}} (int linha, int coluna) const override
+\begin{DoxyCompactList}\small\item\em Verifica se uma jogada é válida. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_a23f7cf4ae90eccb229dd8684fc0258e0}{tabuleiro\+Cheio}} () const override
+\begin{DoxyCompactList}\small\item\em Verifica se o tabuleiro está cheio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classJogoDeTabuleiro}{Jogo\+De\+Tabuleiro}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classJogoDeTabuleiro_aefe341883899b14d5cda472308c93e30}{\texorpdfstring{$\sim$}{\string~}\+Jogo\+De\+Tabuleiro}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classJogoDeTabuleiro}{Jogo\+De\+Tabuleiro}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries linhas}
+\begin{DoxyCompactList}\small\item\em Número de linhas do tabuleiro. \end{DoxyCompactList}\item 
+int {\bfseries colunas}
+\begin{DoxyCompactList}\small\item\em Número de colunas do tabuleiro. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ char $>$ $>$ \mbox{\hyperlink{classJogoDeTabuleiro_a677a040d103daf070ea125a9b78adf9d}{tabuleiro}}
+\begin{DoxyCompactList}\small\item\em Representação do tabuleiro como uma matriz 2D de caracteres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que implementa o jogo \doxylink{classLig4}{Lig4} (Conecta 4). 
+
+A classe representa a lógica e o estado do jogo \doxylink{classLig4}{Lig4}, herda da classe abstrata {\ttfamily \doxylink{classJogoDeTabuleiro}{Jogo\+De\+Tabuleiro}}. O objetivo do jogo é conectar quatro peças consecutivas em linha, coluna ou diagonal. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLig4_adffdeddf3d20829f752913801554126d}\label{classLig4_adffdeddf3d20829f752913801554126d} 
+\index{Lig4@{Lig4}!Lig4@{Lig4}}
+\index{Lig4@{Lig4}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{Lig4()}{Lig4()}}
+{\footnotesize\ttfamily Lig4\+::\+Lig4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \doxylink{classLig4}{Lig4}. 
+
+Inicializa o tabuleiro com 6 linhas e 7 colunas, preenchido com espaços em branco, e define o jogador inicial como \textquotesingle{}X\textquotesingle{}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLig4_a9a1879a8690094855fefcc2a0732c027}\label{classLig4_a9a1879a8690094855fefcc2a0732c027} 
+\index{Lig4@{Lig4}!imprimirTabuleiro@{imprimirTabuleiro}}
+\index{imprimirTabuleiro@{imprimirTabuleiro}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{imprimirTabuleiro()}{imprimirTabuleiro()}}
+{\footnotesize\ttfamily void Lig4\+::imprimir\+Tabuleiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Imprime o tabuleiro no console. 
+
+Exibe o estado atual do tabuleiro, substituindo células vazias por pontos para maior clareza. 
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_afdb0e67a0d441c7ee273b66cd2ef5e6c}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classLig4_aadecde695d2a9489f60f82b4f2455b75}\label{classLig4_aadecde695d2a9489f60f82b4f2455b75} 
+\index{Lig4@{Lig4}!iniciarJogo@{iniciarJogo}}
+\index{iniciarJogo@{iniciarJogo}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{iniciarJogo()}{iniciarJogo()}}
+{\footnotesize\ttfamily void Lig4\+::iniciar\+Jogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Inicializa o tabuleiro do jogo. 
+
+Configura o tabuleiro com células vazias antes do início da partida. 
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a3b89fafb8ebd31a0926568918edbaf44}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classLig4_ab72a0c02d133beb8bca6fc968f67885a}\label{classLig4_ab72a0c02d133beb8bca6fc968f67885a} 
+\index{Lig4@{Lig4}!jogadaValida@{jogadaValida}}
+\index{jogadaValida@{jogadaValida}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{jogadaValida()}{jogadaValida()}}
+{\footnotesize\ttfamily bool Lig4\+::jogada\+Valida (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se uma jogada é válida. 
+
+Uma jogada é válida se a coluna especificada está dentro do intervalo permitido e se ainda há espaço disponível na coluna.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Índice da linha (não utilizado diretamente neste jogo). \\
+\hline
+{\em coluna} & Índice da coluna a ser verificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se a jogada é válida. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a7fa3437977e63f285931228b196ef7a5}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classLig4_a14c4344beeb6f89b2316adea39951795}\label{classLig4_a14c4344beeb6f89b2316adea39951795} 
+\index{Lig4@{Lig4}!realizarJogada@{realizarJogada}}
+\index{realizarJogada@{realizarJogada}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{realizarJogada()}{realizarJogada()}}
+{\footnotesize\ttfamily bool Lig4\+::realizar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Realiza uma jogada no tabuleiro. 
+
+Coloca a peça do jogador atual na coluna especificada, na linha disponível mais baixa. Alterna para o próximo jogador ao final de uma jogada válida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Índice da linha (não utilizado diretamente neste jogo). \\
+\hline
+{\em coluna} & Índice da coluna onde a peça será colocada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se a jogada foi realizada com sucesso. 
+
+false Se a jogada foi inválida (coluna cheia ou índice fora do intervalo). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a88744c91679f9f43d76d15a35b56e7e1}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classLig4_a23f7cf4ae90eccb229dd8684fc0258e0}\label{classLig4_a23f7cf4ae90eccb229dd8684fc0258e0} 
+\index{Lig4@{Lig4}!tabuleiroCheio@{tabuleiroCheio}}
+\index{tabuleiroCheio@{tabuleiroCheio}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{tabuleiroCheio()}{tabuleiroCheio()}}
+{\footnotesize\ttfamily bool Lig4\+::tabuleiro\+Cheio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se o tabuleiro está cheio. 
+
+O tabuleiro é considerado cheio se a linha superior (primeira linha) estiver completamente ocupada.
+
+\begin{DoxyReturn}{Returns}
+true Se o tabuleiro está cheio. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a3d38c00071c5b9207916a18609463f55}{Jogo\+De\+Tabuleiro}}.
+
+\Hypertarget{classLig4_a4060a4a0515ffe048044d85895ca2bf6}\label{classLig4_a4060a4a0515ffe048044d85895ca2bf6} 
+\index{Lig4@{Lig4}!verificarVitoria@{verificarVitoria}}
+\index{verificarVitoria@{verificarVitoria}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{verificarVitoria()}{verificarVitoria()}}
+{\footnotesize\ttfamily bool Lig4\+::verificar\+Vitoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se houve vitória no jogo. 
+
+Examina todas as posições do tabuleiro em busca de quatro peças consecutivas do mesmo jogador em linha, coluna ou diagonal.
+
+\begin{DoxyReturn}{Returns}
+true Se um jogador conseguiu conectar quatro peças consecutivas. 
+
+false Caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogoDeTabuleiro_a25ca4ce9c215c1dad37399b53c97085a}{Jogo\+De\+Tabuleiro}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/lig4.\+hpp\item 
+src/lig4.\+cpp\end{DoxyCompactItemize}
